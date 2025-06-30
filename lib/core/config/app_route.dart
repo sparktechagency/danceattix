@@ -12,13 +12,16 @@ import '../../views/screens/bottom_nav_bar/bottom_nav_bar.dart';
 import '../../views/screens/home/all_product_screen.dart';
 import '../../views/screens/home/cart_screen.dart';
 import '../../views/screens/home/product_details_screen.dart';
+import '../../views/screens/home/progress_screen.dart';
 import '../../views/screens/message/chat_profile_screen.dart';
 import '../../views/screens/message/media_screen.dart';
 import '../../views/screens/message/message_screen.dart';
 import '../../views/screens/notification/notification_screen.dart';
 import '../../views/screens/onboarding/onboarding_screen.dart';
+import '../../views/screens/product/create_product_screen.dart';
 import '../../views/screens/profile/edit_profile_screen.dart';
 import '../../views/screens/profile/profile_information_screen.dart';
+import '../../views/screens/profile/profile_screen.dart';
 import '../../views/screens/profile/wallet_history_screen.dart';
 import '../../views/screens/profile/wallet_screen.dart';
 import '../../views/screens/profile/wish_list_screen.dart';
@@ -61,6 +64,9 @@ class AppRoutes {
   static const String refundRequestScreen = "/RefundRequestScreen";
   static const String wishListScreen = "/WishListScreen";
   static const String bottomNavBar = "/BottomNavBar";
+  static const String progressScreen = "/ProgressScreen";
+  static const String profileScreen = "/ProfileScreen";
+  static const String createProductScreen = "/CreateProductScreen";
 
 
 
@@ -93,5 +99,8 @@ class AppRoutes {
     GetPage(name: refundRequestScreen, page: () =>  RefundRequestScreen()),
     GetPage(name: wishListScreen, page: () =>  WishListScreen()),
     GetPage(name: bottomNavBar, page: () =>  BottomNavBar()),
+    GetPage(name: progressScreen, page: () =>  ProgressScreen()),
+    GetPage(name: profileScreen, page: () =>  ProfileScreen()),
+    GetPage(name: createProductScreen, page: () =>  CreateProductScreen()),
   ];
 }

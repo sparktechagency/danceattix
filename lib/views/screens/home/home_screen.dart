@@ -56,31 +56,36 @@ class _HomeScreenState extends State<HomeScreen> {
               children: [
 
 
-                Row(
-                  children: [
-                    CustomNetworkImage(
-                      border:
-                      Border.all(color: Color(0xff592B00), width: 2),
-                      imageUrl: "https://i.pravatar.cc/150?img=3",
-                      height: 58.h,
-                      width: 58.w,
-                      boxShape: BoxShape.circle,
-                    ),
-                    SizedBox(width: 10.w),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        CustomText(
-                            text: "Sagor Ahamed",
-                            color: Colors.black,
-                            fontWeight: FontWeight.w500,
-                            bottom: 6.h),
-                        CustomText(
-                            text: "hello how are you", fontSize: 12.h),
-                      ],
-                    ),
-                    SizedBox(width: 8.w)
-                  ],
+                GestureDetector(
+                  onTap: () {
+                    Get.toNamed(AppRoutes.profileScreen);
+                  },
+                  child: Row(
+                    children: [
+                      CustomNetworkImage(
+                        border:
+                        Border.all(color: Color(0xff592B00), width: 2),
+                        imageUrl: "https://i.pravatar.cc/150?img=3",
+                        height: 58.h,
+                        width: 58.w,
+                        boxShape: BoxShape.circle,
+                      ),
+                      SizedBox(width: 10.w),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          CustomText(
+                              text: "Sagor Ahamed",
+                              color: Colors.black,
+                              fontWeight: FontWeight.w500,
+                              bottom: 6.h),
+                          CustomText(
+                              text: "welcome to dance attix", fontSize: 12.h),
+                        ],
+                      ),
+                      SizedBox(width: 8.w)
+                    ],
+                  ),
                 ),
 
 
@@ -88,7 +93,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
                 GestureDetector(
                     onTap: () {
-                      Get.toNamed(AppRoutes.cartScreen);
+                      Get.toNamed(AppRoutes.progressScreen);
                     },
                     child: Assets.icons.card.svg()),
 

@@ -79,7 +79,10 @@ class SettingScreen extends StatelessWidget {
             Spacer(),
 
 
-            CustomButton(title: "Delete Account", onpress: () {
+            CustomButton(
+                color: Colors.red,
+                boderColor: Colors.red,
+                title: "Delete Account", onpress: () {
 
               showDialog(
                 context: context,
@@ -94,7 +97,7 @@ class SettingScreen extends StatelessWidget {
                             fontWeight: FontWeight.w600,
                             top: 20.h,
                             bottom: 12.h,
-                            color: Color(0xff592B00)),
+                            color: Colors.red),
                         Divider(),
                         SizedBox(height: 12.h),
                         CustomText(
@@ -122,6 +125,8 @@ class SettingScreen extends StatelessWidget {
                               child: CustomButton(
                                   loading: false,
                                   loaderIgnore: true,
+                                  color: Colors.red,
+                                  boderColor: Colors.red,
                                   height: 50.h,
                                   title: "Yes, Delete",
                                   onpress: () {

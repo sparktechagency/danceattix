@@ -39,6 +39,7 @@ class ProfileInformationScreen extends StatelessWidget {
 
 
             CustomTextField(
+              shadowNeed: false,
               readOnly: true,
               controller: nameCtrl,
               hintText: "victor",
@@ -50,6 +51,7 @@ class ProfileInformationScreen extends StatelessWidget {
 
 
             CustomTextField(
+              shadowNeed: false,
               readOnly: true,
               controller: emailCtrl,
               hintText: "sagorahammed@gmail.com",
@@ -62,6 +64,7 @@ class ProfileInformationScreen extends StatelessWidget {
 
 
             CustomTextField(
+              shadowNeed: false,
               readOnly: true,
               controller: phoneCtrl,
               hintText: "54123545121",
@@ -74,6 +77,7 @@ class ProfileInformationScreen extends StatelessWidget {
 
 
             CustomTextField(
+              shadowNeed: false,
               readOnly: true,
               controller: addressCtrl,
               hintText: "USA, New york, post code-5212",

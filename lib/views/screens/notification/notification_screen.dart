@@ -22,23 +22,31 @@ class NotificationScreen extends StatelessWidget {
                 itemCount: 15,
                 itemBuilder: (context, index) {
                   return Padding(
-                    padding: EdgeInsets.only(bottom: 12.h),
-                    child: Padding(
+                    padding: EdgeInsets.all(6.h),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(12.r),
+                          color: Colors.white,
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black26,
+                            blurRadius: 3,
+                            offset: Offset(-1, 2)
+                          )
+                        ]
+                      ),
                       padding: EdgeInsets.all(12.h),
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          ClipRRect(
-                              borderRadius: BorderRadius.circular(12.r),
-                              child: CustomNetworkImage(
-                                height: 56.h,
-                                width: 56.w,
-                                boxShape: BoxShape.circle,
-                                imageUrl:
-                                    "https://randomuser.me/api/portraits/men/10.jpg",
-                                border: Border.all(
-                                    color: AppColors.primaryColor, width: 2),
-                              )),
+                          Container(
+                            height: 50.h,
+                              width: 50.w,
+                              decoration: BoxDecoration(
+                                color: Color(0xffE7E7E7),
+                                shape: BoxShape.circle,
+                              ),
+                              child: Icon(Icons.notifications_outlined)),
                           SizedBox(width: 12.w),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,

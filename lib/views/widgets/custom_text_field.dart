@@ -26,6 +26,7 @@ class CustomTextField extends StatefulWidget {
   final FormFieldValidator? validator;
   final bool isPassword;
   final bool? isEmail;
+  final bool shadowNeed;
   final bool? readOnly;
   final double? borderRadio;
   final VoidCallback? onTap;
@@ -56,7 +57,7 @@ class CustomTextField extends StatefulWidget {
         this.isPassword = false,
         this.readOnly = false, this.borderRadio, this.onTap, this.onChanged,
         this.maxLength,
-        this.inputFormatters,
+        this.inputFormatters, this.shadowNeed = true,
       });
 
   @override
@@ -80,7 +81,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
         decoration: BoxDecoration(
           boxShadow: [
             BoxShadow(
-              color: Colors.black12,
+              color: widget.shadowNeed ?  Colors.black12 : Colors.transparent ,
               offset: Offset(-2, 3),
               blurRadius: 5
             )

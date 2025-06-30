@@ -16,7 +16,7 @@ class MessageUserScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar(title: "Chat"),
+      appBar: CustomAppBar(title: "Messages"),
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 24.w),
         child: Column(
@@ -24,7 +24,7 @@ class MessageUserScreen extends StatelessWidget {
             CustomTextField(
                 controller: searchCtrl,
                 hintextColor: Colors.black87,
-                hintText: "Enter name",
+                hintText: "Search by products name",
                 suffixIcon: Assets.icons.searhIcon.svg()),
 
 
@@ -42,7 +42,7 @@ class MessageUserScreen extends StatelessWidget {
                         margin: EdgeInsets.all(3.r),
                         padding: EdgeInsets.symmetric(vertical: 12.h, horizontal: 10.w),
                         decoration: BoxDecoration(
-                          color: Color(0xffFEF3EA),
+                          color: Color(0xffE7E7E7),
                           borderRadius: BorderRadius.circular(10.r),
 
                         ),
@@ -61,7 +61,7 @@ class MessageUserScreen extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 CustomText(
-                                    text: "Sagor Ahamed",
+                                    text: "T-Shirt",
                                     color: Colors.black,
                                     fontWeight: FontWeight.w500,
                                     bottom: 6.h),

@@ -116,6 +116,7 @@ class ChatProfileScreen extends StatelessWidget {
                           Divider(),
                           SizedBox(height: 12.h),
                           CustomTextField(
+                            shadowNeed: false,
                               controller: amonCtrl,
                               labelText: "Reason of Report",
                               hintText: "Reason"),

@@ -23,6 +23,7 @@ class ChangePasswordScreen extends StatelessWidget {
           children: [
             SizedBox(height: 16.h),
             CustomTextField(
+               shadowNeed: false,
                 controller: currentPassCtrl,
                 labelText: "Current Password",
                 hintText: "Enter old password",
@@ -32,6 +33,7 @@ class ChangePasswordScreen extends StatelessWidget {
                 hintextColor: Colors.black,
                 filColor: Colors.white),
             CustomTextField(
+                shadowNeed: false,
                 controller: newPassCtrl,
                 labelText: "New Password",
                 hintText: "Enter new password",
@@ -41,6 +43,7 @@ class ChangePasswordScreen extends StatelessWidget {
                 hintextColor: Colors.black,
                 filColor: Colors.white),
             CustomTextField(
+                shadowNeed: false,
                 controller: rePassCtrl,
                 labelText: "Password",
                 hintText: "Re-enter new password",
@@ -68,8 +71,7 @@ class ChangePasswordScreen extends StatelessWidget {
                                 fontSize: 16.h,
                                 fontWeight: FontWeight.w600,
                                 top: 20.h,
-                                bottom: 12.h,
-                                color: Color(0xff592B00)),
+                                bottom: 12.h),
                             Divider(),
                             SizedBox(height: 12.h),
                             CustomText(

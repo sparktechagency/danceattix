@@ -63,7 +63,7 @@ class WalletHistoryScreen extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
 
-                            CustomText(text: "Naya", color: Color(0xff592B00), fontWeight: FontWeight.w500, bottom: 6.h),
+                            CustomText(text: "Jeorge Mayank", fontWeight: FontWeight.w500, bottom: 6.h),
 
                             CustomText(text: "Transition id: 4524214212", fontSize: 12.h),
                             CustomText(text: "21 April 2025", fontSize: 12.h),
@@ -74,7 +74,7 @@ class WalletHistoryScreen extends StatelessWidget {
 
                         Spacer(),
 
-                        CustomText(text: "\$ 25", fontSize: 28.h, color: AppColors.primaryColor),
+                        CustomText(text: "\$ 25", fontSize: 28.h, color: Colors.black),
 
                         SizedBox(width: 8.w)
 

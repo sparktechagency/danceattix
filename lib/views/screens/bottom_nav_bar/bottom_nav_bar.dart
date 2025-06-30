@@ -5,6 +5,7 @@ import '../../../global/custom_assets/assets.gen.dart';
 import '../home/home_screen.dart';
 import '../message/message_user_screen.dart';
 import '../post/post_screen.dart';
+import '../product/product_screen.dart';
 import '../profile/profile_screen.dart'; // Add your custom colors
 
 
@@ -19,7 +20,8 @@ class _MainScreenState extends State<BottomNavBar> {
      HomeScreen(),
      PostScreen(),
      MessageUserScreen(),
-     ProfileScreen(),
+     // ProfileScreen(),
+    ProductScreen()
   ];
 
   int currentIndex = 0;
@@ -43,7 +45,7 @@ class _MainScreenState extends State<BottomNavBar> {
           margin: EdgeInsets.all(sizeH * .015),
           padding: EdgeInsets.all(sizeH * .01),
           decoration: BoxDecoration(
-            color: Colors.white,
+            color: AppColors.primaryColor,
             borderRadius: BorderRadius.circular(sizeH * .05),
             boxShadow: [
               BoxShadow(
@@ -82,17 +84,17 @@ class _MainScreenState extends State<BottomNavBar> {
           padding: EdgeInsets.symmetric(horizontal: 20.w),
           height: sizeH * .06,
           decoration: BoxDecoration(
-              color: isSelected ? Colors.white : Colors.transparent,
+              color: isSelected ? Colors.black12 : Colors.transparent,
               shape: BoxShape.circle),
           child:  Padding(padding: EdgeInsets.all(6.r),
             child: index == 0
-                ? isSelected ? Assets.icons.home.svg() : Assets.icons.homeUnselected.svg()
+                ? Assets.icons.home.svg()
                 : index == 1
                 ? Assets.icons.plus
-                .svg(color: isSelected ? AppColors.primaryColor : Colors.grey)
+                .svg(color: Colors.white)
                 : index == 2
-                ? Assets.icons.message.svg(color: isSelected ? AppColors.primaryColor : Colors.grey)
-                : isSelected ? Assets.icons.profileSelected.svg()  :  Assets.icons.profile.svg(),
+                ? Assets.icons.message.svg(color: Colors.white)
+                : Assets.icons.profile.svg()
           )
       ),
     );

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 
 
 import '../../widgets/cachanetwork_image.dart';
@@ -52,6 +53,7 @@ class EditProfileScreen extends StatelessWidget {
 
 
             CustomTextField(
+              shadowNeed: false,
               controller: nameCtrl,
               hintText: "victor",
               labelText: "Your Name",
@@ -63,6 +65,7 @@ class EditProfileScreen extends StatelessWidget {
 
 
             CustomTextField(
+              shadowNeed: false,
               controller: phoneCtrl,
               hintText: "54123545121",
               labelText: "Phone No.",
@@ -74,6 +77,7 @@ class EditProfileScreen extends StatelessWidget {
 
 
             CustomTextField(
+              shadowNeed: false,
               controller: addressCtrl,
               hintText: "USA, New york, post code-5212",
               labelText: "Address",
@@ -87,7 +91,10 @@ class EditProfileScreen extends StatelessWidget {
             Spacer(),
 
 
-            CustomButton(title: "Update Profile", onpress: (){}),
+            CustomButton(title: "Update Profile", onpress: (){
+              Get.back();
+              Get.back();
+            }),
 
             SizedBox(height: 100.h)
 

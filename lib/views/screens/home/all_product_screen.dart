@@ -212,7 +212,6 @@ import 'package:get/get.dart';
 
 import '../../../core/config/app_route.dart';
 import '../../../global/custom_assets/assets.gen.dart';
-import '../../widgets/custom_app_bar.dart';
 import '../../widgets/custom_button.dart';
 import '../../widgets/custom_product_card.dart';
 import '../../widgets/custom_text.dart';
@@ -374,13 +373,17 @@ class _AllProductScreenState extends State<AllProductScreen> {
 
           SizedBox(width: 24.w)
         ],
-      ), //CustomAppBar(title: "All Product"),
+      ),
 
 
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 24.w),
         child: Column(
           children: [
+
+            SizedBox(height: 12.h),
+
+
             CustomTextField(
                 controller: searchCtrl,
                 hintextColor: Colors.black87,
