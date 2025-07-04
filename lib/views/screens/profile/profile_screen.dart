@@ -66,13 +66,13 @@ class ProfileScreen extends StatelessWidget {
 
 
 
-              _customCart(
-                title: "Admin Support",
-                icon: Assets.icons.wishListIcon.svg(),
-                onTap: () {
-                  Get.toNamed(AppRoutes.wishListScreen);
-                },
-              ),
+              // _customCart(
+              //   title: "Admin Support",
+              //   icon: Assets.icons.wishListIcon.svg(),
+              //   onTap: () {
+              //     // Get.toNamed(AppRoutes.wishListScreen);
+              //   },
+              // ),
 
 
 

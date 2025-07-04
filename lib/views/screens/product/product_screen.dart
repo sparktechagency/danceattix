@@ -36,7 +36,7 @@ class _ProductScreenState extends State<ProductScreen> {
             Get.toNamed(AppRoutes.createProductScreen);
           },
           child: Container(
-             margin: EdgeInsets.only(bottom: 80.h),
+             margin: EdgeInsets.only(bottom: 100.h),
             height: 44.h,
             width: 53.w,
             decoration: BoxDecoration(

@@ -18,6 +18,7 @@ class EditProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       appBar: CustomAppBar(title: "Profile Information"),
       body: Padding(
         padding:  EdgeInsets.symmetric(horizontal: 24.w),
